@@ -82,7 +82,7 @@ function App() {
     <div className="App">
       <h3
         style={styles.feedback}
-      >Leave feedback at 910-249-6765</h3>
+      >Questions? Text 910-249-6765</h3>
       {
         state.items.map((item, index) => {
           const name = getName()
