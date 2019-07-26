@@ -3,6 +3,8 @@ import React, {
 } from 'react';
 import './App.css';
 import { API, graphqlOperation } from 'aws-amplify'
+import getName from './person'
+
 const ReactMarkdown = require('react-markdown')
 
 const onCreateSMS = `
@@ -81,9 +83,10 @@ function App() {
       <h3>Leave feedback at 910-249-6765</h3>
       {
         state.items.map((item, index) => {
+          const name = getName()
           return (
             <div key={index} style={styles.container}>
-              <p>From: {item.originationNumber}</p>
+              <p>From: {name}</p>
               <ReactMarkdown source={item.messageBody} />
            </div>
           )
