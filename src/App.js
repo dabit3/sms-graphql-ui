@@ -88,7 +88,7 @@ function App() {
           const name = getName()
           return (
             <div key={index} style={styles.container}>
-              <p>From: {name}</p>
+              <p style={{fontSize: 16}}>From: {name}</p>
               <ReactMarkdown source={item.messageBody} />
            </div>
           )
