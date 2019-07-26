@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.20.7",
+    "aws-amplify": "^1.1.32",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-markdown": "^4.1.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
