@@ -80,7 +80,9 @@ function App() {
 
   return (
     <div className="App">
-      <h3>Leave feedback at 910-249-6765</h3>
+      <h3
+        style={styles.feedback}
+      >Leave feedback at 910-249-6765</h3>
       {
         state.items.map((item, index) => {
           const name = getName()
@@ -97,6 +99,14 @@ function App() {
 }
 
 const styles = {
+  feedback: {
+    backgroundColor: '#463744',
+    padding: 30,
+    margin: 0,
+    color: 'white',
+    fontWeight: '400',
+    fontSize: 36
+  },
   container: {
     borderBottom: '2px solid #ddd'
   }
