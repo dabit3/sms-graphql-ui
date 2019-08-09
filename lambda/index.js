@@ -24,7 +24,7 @@ exports.handler = async (event) => {
   const messageBody = data["messageBody"]
 
   try {
-    const data = await axios({
+    const graphqlData = await axios({
       url: '<API_URL>',
       method: 'post',
       headers: {
@@ -41,7 +41,7 @@ exports.handler = async (event) => {
         }
       }
     })
-    console.log('data successfully posted! :', data)
+    console.log('data successfully posted! :', graphqlData)
   } catch (err) {
     console.log('error posting to appsync: ', err)
   }   
