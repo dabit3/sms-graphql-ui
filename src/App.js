@@ -88,7 +88,7 @@ function App() {
           const name = getName()
           return (
             <div key={index} style={styles.container}>
-              <p style={{fontSize: 16}}>From: {name}</p>
+              <p style={styles.from}>From: {name}</p>
               <ReactMarkdown source={item.messageBody} />
            </div>
           )
@@ -100,15 +100,23 @@ function App() {
 
 const styles = {
   feedback: {
-    backgroundColor: '#463744',
+    backgroundColor: '#f39c38',
     padding: 30,
     margin: 0,
     color: 'white',
-    fontWeight: '400',
-    fontSize: 36
+    fontWeight: '600',
+    fontSize: 36,
   },
   container: {
-    borderBottom: '2px solid #ddd'
+    borderBottom: '2px solid #ddd',
+    padding: '10px 0px',
+    textAlign: 'left',
+    width: 700,
+    margin: '0 auto'
+  },
+  from: {
+    fontSize: 16,
+    margin: '7px 0px'
   }
 }
 
