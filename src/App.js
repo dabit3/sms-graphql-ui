@@ -82,7 +82,7 @@ function App() {
     <div className="App">
       <h3
         style={styles.feedback}
-      >Questions? Text 910-249-6765</h3>
+      >Questions? Text markdown to 910-249-6765</h3>
       {
         state.items.map((item, index) => {
           const name = getName()
@@ -105,7 +105,8 @@ const styles = {
     margin: 0,
     color: 'white',
     fontWeight: '600',
-    fontSize: 36,
+    fontSize: 34,
+    textShadow: '1px 1px 1px rgba(0, 0, 0, .5)',
   },
   container: {
     borderBottom: '2px solid #ddd',
