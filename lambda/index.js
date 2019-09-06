@@ -6,7 +6,8 @@ const uuid = require('uuid/v4')
 const Filter = require('bad-words')
 const filter = new Filter()
 
-var newBadWords = ['f', 'u', 'c', 'k', 's', 'h', 't', 'j', 'z', 'p', 'u', 's', 'y', 'fu', 'ck', 'uck', 'fuc', 'uc', 'shi', 'dic', 'ick', 'ck', 'ic', 'di', 'pus', 'uss', 'ussy', 'ssy', 'shi']
+var newBadWords = ['f', 'u', 'c', 'k', 'h', 't', 'j', 'z', 'p', 'u', 'y', 'fu', 'ck', 'uck', 'fuc', 'uc', 'shi', 'dic', 'ick', 'ck', 'ic', 'di', 'pus', 'uss', 'ussy', 'ssy', 'shi']
+
 filter.addWords(...newBadWords);
 
 const postMessage = gql`
