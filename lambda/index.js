@@ -32,7 +32,7 @@ exports.handler = async (event) => {
       url: '<API_URL>',
       method: 'post',
       headers: {
-        'x-api-key': 'da2-a24rbpdvxjdcjcmaookatpez5i'
+        'x-api-key': "<YOUR_API_KEY>"
       },
       data: {
         query: print(postMessage),
